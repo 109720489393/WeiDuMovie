@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity">
+    tools:context="com.bw.movie.activity.StartActivity">
     <ImageView
         android:src="@mipmap/start_background"
         android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:text="维度影院"
+        android:layout_above="@+id/bottom_text"
+        android:layout_marginBottom="@dimen/dp_24"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/bottom_text"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:text="不一样的视觉盛宴"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_98"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

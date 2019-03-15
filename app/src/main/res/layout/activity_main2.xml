@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".activity.Main2Activity">
-
-</android.support.constraint.ConstraintLayout>
+    tools:context="com.bw.movie.activity.YinActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_page"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RadioGroup
+        android:id="@+id/view_group"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_70"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/r1"
+            android:button="@null"
+            android:checked="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_width="@dimen/dp_12"
+            android:background="@drawable/but_style"
+            android:layout_height="@dimen/dp_12" />
+        <RadioButton
+            android:id="@+id/r2"
+            android:button="@null"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_width="@dimen/dp_12"
+            android:background="@drawable/but_style2"
+            android:layout_height="@dimen/dp_12" />
+        <RadioButton
+            android:id="@+id/r3"
+            android:button="@null"
+            android:background="@drawable/but_style3"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12" />
+        <RadioButton
+            android:button="@null"
+            android:id="@+id/r4"
+            android:background="@drawable/but_style4"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12" />
+    </RadioGroup>
+</RelativeLayout>
